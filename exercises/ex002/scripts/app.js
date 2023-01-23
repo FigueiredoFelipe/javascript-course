@@ -1,6 +1,4 @@
-let name = prompt('')
+let nameTest = prompt('')
 
-let nameP = name
-
-
-querrSelec
+// alert("It is nice to meet you, name")
+alert('É um prazer te conhecer '+ nameTest + '!')
