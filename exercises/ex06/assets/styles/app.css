@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+:root {
+    --color-0:  #fff;
+    --color-1:  lightgreen;
+}
+
+div.button, div#area {
+    background-color: var(--color-1);
+    color: var(--color-0);
+    height: 200px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: bolder 15pt arial;
+    text-shadow: 1px 1px 1px black;
+}
