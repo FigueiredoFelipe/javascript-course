@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    background-image: linear-gradient(to right, rgb(214, 201, 176), rgba(233, 200, 206, 0.575));
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header, header h1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding: 20px;
+}
+
+section {
+    width:50vh;
+    height: 50vh;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+}
+
+article {
+    padding-top: 20px;
+}
