@@ -1,23 +1,29 @@
-const d1 = document.getElementById('area')
-// // addEventListener('click')
+const buttons = document.querySelectorAll('.button')
 
+buttons.forEach(button => {
+    button.addEventListener('click', handleClick)
+    button.addEventListener('mouseenter', handleEnter)
+    button.addEventListener('mouseout', handleExit)
+});
 
-function clicar () {
-    d1.innerText = 'Clicou'
-    d1.style.background = 'yellow'
+function handleClick (event) {
+    const el = event.target
+    el.classList.toggle('active') 
+    if (el.className.includes("active")) {
+        el.innerText = 'Interaja'
+    } else {
+        el.innerText = 'Clicou'
+    }
 }
 
-function entrar () {
-    d1.style.background = 'blue'
-    d1.innerText = 'Entrou!'
+function handleEnter (event) {
+    const el = event.target
+    el.classList.add('mouseOn')
+    el.innerText = 'Entrou!'
 }
 
-function sair (){
-    d1.style.background = ''
-    d1.innerText = 'Saiu!'
+function handleExit (event){
+    const el = event.target
+    el.classList.remove('mouseOn')
+    el.innerText = 'Saiu!'
 }
-
-
-d1.addEventListener('click', clicar)
-d1.addEventListener('mouseenter', entrar)
-d1.addEventListener('mouseout', sair)

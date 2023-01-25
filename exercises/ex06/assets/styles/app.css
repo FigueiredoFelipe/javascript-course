@@ -5,9 +5,9 @@
     --color-1:  lightgreen;
 }
 
-div.button, div#area {
-    background-color: var(--color-1);
+div.button {
     color: var(--color-0);
+    background-color: var(--color-1);
     height: 200px;
     width: 200px;
     display: flex;
@@ -15,4 +15,16 @@ div.button, div#area {
     justify-content: center;
     font: bolder 15pt arial;
     text-shadow: 1px 1px 1px black;
+}
+
+.button.active {
+    background-color: yellow;
+}
+
+.mouseOn {
+    background-color: blue !important;
+}
+
+.mouseOff {
+    background-color: var(--color-1);
 }

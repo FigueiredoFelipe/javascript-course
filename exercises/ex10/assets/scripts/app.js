@@ -12,8 +12,8 @@ const velocidade = () => {
         res.innerHTML = `Sua velocidade foi superior a ${maxSpeed}Km/h. Você foi <strong>MULTADO!</strong>`
         res.innerHTML += `<p>Velocidade auferida ${vel}Km/h.</p>`
     } else {
-    res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
-}
+        res.innerHTML += `<p>Dirija sempre com o cinto de segurança!</p>`
+    }
 }
 
 veriButton.addEventListener('click', velocidade)

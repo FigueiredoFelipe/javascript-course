@@ -7,12 +7,13 @@ const brasileiro = 'Brasil'
 
 const validar = () => {
     let nacao = pais.value
-    let nacionalidade = 
-    res.innerHTML = `Você nasceu no ${nacao}.`
+    let nacionalidade =
+        res.innerHTML = `Você nasceu no ${nacao}.`
     if (nacao == 'Brasil') {
-        res.innerHTML += `<p><strong>Portanto você é brasileiro</strong></p>`} else if (nacao != 'Brasil'){
-            res.innerHTML += `<p><strong>Você é estrangeiro.</strong></p>`
-        }
+        res.innerHTML += `<p><strong>Portanto você é brasileiro</strong></p>`
+    } else if (nacao != 'Brasil') {
+        res.innerHTML += `<p><strong>Você é estrangeiro.</strong></p>`
     }
+}
 
 checkBtn.addEventListener('click', validar)
