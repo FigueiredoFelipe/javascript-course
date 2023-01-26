@@ -1,7 +1,6 @@
 const now = new Date()
 const weekDay = now.getDay()
 
-
 // console.log(now)
 // console.log(weekDay)
 
