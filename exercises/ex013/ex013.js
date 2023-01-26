@@ -2,8 +2,8 @@ const now = new Date()
 const weekDay = now.getDay()
 
 
-console.log(now)
-console.log(weekDay)
+// console.log(now)
+// console.log(weekDay)
 
 switch (weekDay){
     case 0:
@@ -27,4 +27,7 @@ switch (weekDay){
     case 6:
         console.log('Saturday')
         break
+    default:
+            console.log(`[ERROR] Invalid Day`)
+            break
 }

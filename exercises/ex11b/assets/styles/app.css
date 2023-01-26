@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-01: #fff;
+    --color-02: #DAD2CF;
+    --color-03: #575555;
+    --color-04: #BF3402;
+    --color-05: #8C2601;
+    --color-06: #401101;
+    --color-07: #000;
+
+    --font-01: Arial, Helvetica, sans-serif;
+    --font-02: 'Noticia Text', serif;
+}
+
+body {
+    font-family: var(--font-02);
+    background-color: var(--color-01);
+    color: var(--color-07)
+}
+
+header {
+    background-color: var(--color-01);
+    margin: auto;
+    width: 800px;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    width: 800px;
+}
+
+nav .menu {
+    padding-right: 25px;
+    justify-content: center;
+}
+
+nav .menu:hover {
+    text-decoration: underline;
+    font-weight: bolder;
+    background-color: #57555541;
+}
+
+
+hr {
+    width: 800px;
+    margin: auto;
+}
+
+main {
+    padding: 10px;
+    margin: auto;
+    width: 800px;
+}
+
+#txt-age {
+    width: 80px;
+}
+
+#result-div {
+    background-color: var(--color-02);
+    min-height: 200px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
