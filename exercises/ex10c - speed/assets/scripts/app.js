@@ -18,7 +18,5 @@ const checkSpeed = () => {
     }
 }
 
-// Estudar como habilitar enter para enviar o formulário
-
 
 informBtn.addEventListener('click', checkSpeed)
