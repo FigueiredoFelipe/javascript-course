@@ -1,8 +1,8 @@
 const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 const time = new Date()
 const displayTime = document.getElementById('time-now')
-const hour = parseInt(Math.random() * 23)
-// const hour = time.getHours()
+// const hour = parseInt(Math.random() * 23) for test.
+const hour = time.getHours()
 const day = time.getDate()
 const month = monthNames[time.getMonth()]
 const year = time.getFullYear()
