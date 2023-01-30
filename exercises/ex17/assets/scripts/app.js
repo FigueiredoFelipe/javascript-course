@@ -2,8 +2,8 @@ const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
 const time = new Date()
 const displayTime = document.getElementById('time-now')
 // const hour = parseInt(Math.random() * 23) for test.
-const hour = '11'
-// const hour = time.getHours()
+// const hour = '1'
+const hour = time.getHours()
 const day = time.getDate()
 const month = monthNames[time.getMonth()]
 const year = time.getFullYear()
@@ -27,18 +27,18 @@ if (hour >= 6 && hour < 11) {
 
 } else if (hour >= 15 && hour < 18) {
     document.getElementById("image").src = "./assets/images/03.png";
-    background.style.backgroundColor = rgb(222, 112, 103);
+    background.style.backgroundColor = '#f5b878';
 
 } else if (hour >= 18 && hour < 21) {
     document.getElementById("image").src = "./assets/images/04.png";
-    background.style.backgroundColor = rgb(211, 215, 244);
+    background.style.backgroundColor = '#d2c3e2';
 
 } else if (hour >= 21 && hour <= 24) {
     document.getElementById("image").src = "./assets/images/05.png";
-    background.style.backgroundColor = rgb(72, 63, 142);
+    background.style.backgroundColor = '#5557b7';
 
 } else if (hour >= 1 && hour < 6) {
     document.getElementById("image").src = "./assets/images/06.png";
-    background.style.backgroundColor = rgb(74, 168, 185);
+    background.style.backgroundColor = '#346692';
 
 }
