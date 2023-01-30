@@ -2,7 +2,7 @@ const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", 
 const time = new Date()
 const displayTime = document.getElementById('time-now')
 // const hour = parseInt(Math.random() * 23) for test.
-const hour = '6'
+const hour = '11'
 // const hour = time.getHours()
 const day = time.getDate()
 const month = monthNames[time.getMonth()]
@@ -23,7 +23,7 @@ if (hour >= 6 && hour < 11) {
 
 } else if (hour >= 11 && hour < 15) {
     document.getElementById("image").src = "./assets/images/02.png";
-    background.style.backgroundColor = rgb(147, 228, 255);
+    background.style.backgroundColor = '#2cbbff';
 
 } else if (hour >= 15 && hour < 18) {
     document.getElementById("image").src = "./assets/images/03.png";
