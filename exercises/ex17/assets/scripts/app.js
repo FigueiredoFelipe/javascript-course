@@ -1,9 +1,12 @@
-const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 const time = new Date()
+const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
+
 const displayTime = document.getElementById('time-now')
 // const hour = parseInt(Math.random() * 23) for test.
 // const hour = '1'
+
 const hour = time.getHours()
+const min = time.getMinutes()
 const day = time.getDate()
 const month = monthNames[time.getMonth()]
 const year = time.getFullYear()
@@ -13,7 +16,7 @@ const allImages = img.innerHTML
 let background = document.getElementById('bg')
 let backColor = background.style
 
-displayTime.innerText = `Agora são ${hour} horas do dia ${day} do mês de ${month} de ${year}.`
+displayTime.innerText = `Agora são ${hour}:${min} minutos do dia ${day} do mês de ${month} de ${year}.`
 
 
 
