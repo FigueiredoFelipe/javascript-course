@@ -151,7 +151,7 @@ const verify = () => {
 
 
     else {
-        alert('Please insert a valid Birth Date and Gender.')
+        alert(`Please insert a valid year between (1903 ~ ${currentYear}) and a Gender.`)
     }
 
 }
