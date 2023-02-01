@@ -2,11 +2,8 @@ const time = new Date()
 const monthNames = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 
 const displayTime = document.getElementById('time-now')
-// const hour = parseInt(Math.random() * 23) for test.
-// const hour = '1'
-
-const testando = time.getMonth()
-console.log({testando})
+const img = document.getElementsByTagName('img')
+const background = document.getElementById('bg')
 
 const hour = time.getHours()
 const min = time.getMinutes()
@@ -14,12 +11,10 @@ const day = time.getDate()
 const month = monthNames[time.getMonth()]
 const year = time.getFullYear()
 
-const img = document.getElementsByTagName('img')
 const allImages = img.innerHTML
-let background = document.getElementById('bg')
 let backColor = background.style
 
-displayTime.innerText = `Agora são ${hour}:${min.toFixed(0).padStart(2, '0')} minutos do dia ${day} do mês de ${month} de ${year}.`
+displayTime.innerText = `Agora são ${hour}:${min.toFixed(0).padStart(2, '0')} do dia ${day} de ${month} de ${year}.`
 
 
 if (hour >= 6 && hour < 11) {
