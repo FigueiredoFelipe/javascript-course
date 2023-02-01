@@ -36,9 +36,6 @@ h3 {
     margin: auto;
 }
 
-footer {
-    font-style: italic;
-}
 
 section {
     margin: auto;
@@ -66,3 +63,15 @@ p {
     padding: 8px;
 }
 
+footer {
+    font-style: italic;
+}
+
+footer a, footer a:visited {
+    text-decoration: none;
+    color: var(--color-00);
+}
+
+footer a:hover {
+    color: var(--color-06);
+}
