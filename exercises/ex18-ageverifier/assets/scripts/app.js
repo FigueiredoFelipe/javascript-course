@@ -27,7 +27,6 @@ const verify = () => {
     }
 
     else if (userMale.checked === true && userAge > 0 && userAge <= 1) {
-
         displayData.innerText = `The user informed us he is a ${maleStage[0]} and will complete ${userAge}-years-old by the end of the current year.`
         document.getElementById("image").src = "./assets/images/9-baby-boy.png"
     }
@@ -40,7 +39,6 @@ const verify = () => {
     else if (userMale.checked === true && userAge > 3 && userAge <= 8) {
         displayData.innerText = `The user informed us he is a ${maleStage[1]} and will complete ${userAge}-years-old by the end of the current year.`
         document.getElementById("image").src = "./assets/images/10-little-boy.png"
-
     }
 
     else if (userMale.checked === true && userAge > 8 && userAge <= 13) {
@@ -140,15 +138,6 @@ const verify = () => {
         document.getElementById("image").src = "./assets/images/8-elderly-woman.png"
 
     }
-
-
-    /*Other*/
-
-    else if (userOther.checked === true && userAge >= 0 && userAge <= 120) {
-        displayData.innerText = `The user will complete ${userAge}-years-old by the end of the current year.`
-        document.getElementById("image").src = ""
-    }
-
 
     else {
         alert(`Please insert a valid year between (1903 ~ ${currentYear}) and a Gender.`)
