@@ -7,3 +7,7 @@
 
  #3 - https://figueiredofelipe.github.io/javascript-course/exercises/ex11b-age-vote/ex11b-age-vote.html
 
+ #4 - https://figueiredofelipe.github.io/javascript-course/exercises/ex19-couting-skiping/index.html
+
+
+
