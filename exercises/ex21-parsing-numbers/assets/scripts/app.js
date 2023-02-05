@@ -53,5 +53,11 @@ function parsingData() {
     }
 }
 
-addBtn.addEventListener('click', adding)
 analyzeBtn.addEventListener('click', parsingData)
+addBtn.addEventListener('click', adding)
+
+userInput.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+    adding();
+    }
+})
