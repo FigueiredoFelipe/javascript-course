@@ -29,6 +29,8 @@ function adding() {
         tab.appendChild(item)
         numberPool.push(chosenNumber)
     }
+    userInput.value = ''
+    userInput.focus()
 }
 
 function parsingData() {
