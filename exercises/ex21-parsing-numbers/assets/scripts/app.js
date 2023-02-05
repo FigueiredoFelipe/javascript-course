@@ -30,6 +30,7 @@ function adding() {
         numberPool.push(chosenNumber)
     }
     userInput.value = ''
+    result.innerHTML = ''
     userInput.focus()
 }
 
