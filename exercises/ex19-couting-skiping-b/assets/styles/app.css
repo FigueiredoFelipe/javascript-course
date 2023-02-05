@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+body {
+    font-family: sans-serif;
+    background-color: rgb(26, 167, 223);
+    font-size: 1.5em;
+}
+
+header,
+footer {
+    color: rgb(255, 255, 255);
+    margin: auto;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.801);
+}
+
+.main {
+    width: 80vw;
+    height: 64vh;
+    min-height: 300px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 5px 14px 0px rgba(0, 0, 0, 0.596);
+    text-align: center;
+    padding: 10px;
+    font-size: .8em;
+}
+
+#user-input {
+    width: 100%;
+    height: 45%;
+    text-align: left;
+    text-indent: 20px;
+    font-weight: bold;
+}
+
+#user-input > p {
+    position: relative;
+    top: 5%;
+}
+
+#result {
+    width: 100%;
+    height: 45%;
+    text-align: left;
+    text-indent: 20px;
+    font-weight: bold;
+}
+
+#result > p {
+    position: relative;
+    top: 5%;
+}
+
+footer {
+    padding: 20px;
+    font-style: italic;
+}
+
+footer a,
+footer a:visited {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+footer a:hover {
+    color: rgb(225, 247, 226);
+}
