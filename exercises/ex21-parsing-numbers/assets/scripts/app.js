@@ -6,11 +6,22 @@ const result = document.querySelector('#result')
 const numberPool = []
 
 
+function inList(n, l) {
+    if (l.indexOf(Number(n)) != -1) {
+        return true
+    } else {
+        return false
+    }
+}
+
+
 function adding() {
     let chosenNumber = Number(userInput.value)
 
     if (chosenNumber <= 0 || chosenNumber > 100) {
         alert('Only numbers between 1 and 100 are allowed.')
+    } else if (inList(chosenNumber, numberPool)) {
+        alert('Choose non repeated numbers.')
     } else {
         let item = document.createElement('option')
         item.text = `Number ${chosenNumber} added.`
@@ -24,7 +35,7 @@ function parsingData() {
     if (numberPool.length == 0) {
         alert(`Please don't rush, add some numbers so we can analyze.`)
     } else {
-        
+
         let higherValue = Number(Math.max(...numberPool))
         let lowestValue = Number(Math.min(...numberPool))
         let sum = numberPool.reduce((acc, cur) => acc + cur, 0)
